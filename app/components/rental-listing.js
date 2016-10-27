@@ -5,6 +5,10 @@ export default Ember.Component.extend({
 	actions: {
 		toggleImageSize() {
 			this.toggleProperty('isWide');
-		}
+		},
+
+    showPropertyName(name) {
+      alert(name);
+    }
 	}
 });
