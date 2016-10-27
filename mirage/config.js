@@ -62,4 +62,39 @@ export default function() {
       }]
     };
   });
+
+  this.get('/users');
+  this.get('/users/:user_id');
+  // this.get('/users', function() {
+  //   return {
+  //     data: [{
+  //       type: 'users',
+  //       id: '1',
+  //       attributes: {
+  //         firstName: 'Paresh',
+  //         lastName: 'Gupta',
+  //         email: 'paresh@vinsol.com',
+  //         isAdmin: true
+  //       }
+  //     }, {
+  //       type: 'users',
+  //       id: '2',
+  //       attributes: {
+  //         firstName: 'Parry',
+  //         lastName: 'Gupta',
+  //         email: 'parry@vinsol.com',
+  //         isAdmin: false
+  //       }
+  //     }, {
+  //       type: 'users',
+  //       id: '3',
+  //       attributes: {
+  //         firstName: 'Brook',
+  //         lastName: 'Daniel',
+  //         email: 'brook@vinsol.com',
+  //         isAdmin: false
+  //       }
+  //     }]
+  //   }
+  // })
 }
