@@ -24,42 +24,79 @@ export default function() {
     http://www.ember-cli-mirage.com/docs/v0.2.x/shorthands/
   */
 	
-	this.get('/rentals', function() {
-    return {
-      data: [{
-        type: 'rentals',
-        id: 1,
-        attributes: {
-          title: 'Grand Old Mansion',
-          owner: 'Veruca Salt',
-          city: 'San Francisco',
-          type: 'Estate',
-          bedrooms: 15,
-          image: 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg'
-        }
-      }, {
-        type: 'rentals',
-        id: 2,
-        attributes: {
-          title: 'Urban Living',
-          owner: 'Mike Teavee',
-          city: 'Seattle',
-          type: 'Condo',
-          bedrooms: 1,
-          image: 'https://upload.wikimedia.org/wikipedia/commons/0/0e/Alfonso_13_Highrise_Tegucigalpa.jpg'
-        }
-      }, {
-        type: 'rentals',
-        id: 3,
-        attributes: {
-          title: 'Downtown Charm',
-          owner: 'Violet Beauregarde',
-          city: 'Portland',
-          type: 'Apartment',
-          bedrooms: 3,
-          image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg'
-        }
-      }]
-    };
-  });
+	// this.get('/rentals', function() {
+ //    return {
+ //      data: [{
+ //        type: 'rentals',
+ //        id: 1,
+ //        attributes: {
+ //          title: 'Grand Old Mansion',
+ //          owner: 'Veruca Salt',
+ //          city: 'San Francisco',
+ //          type: 'Estate',
+ //          bedrooms: 15,
+ //          image: 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg'
+ //        }
+ //      }, {
+ //        type: 'rentals',
+ //        id: 2,
+ //        attributes: {
+ //          title: 'Urban Living',
+ //          owner: 'Mike Teavee',
+ //          city: 'Seattle',
+ //          type: 'Condo',
+ //          bedrooms: 1,
+ //          image: 'https://upload.wikimedia.org/wikipedia/commons/0/0e/Alfonso_13_Highrise_Tegucigalpa.jpg'
+ //        }
+ //      }, {
+ //        type: 'rentals',
+ //        id: 3,
+ //        attributes: {
+ //          title: 'Downtown Charm',
+ //          owner: 'Violet Beauregarde',
+ //          city: 'Portland',
+ //          type: 'Apartment',
+ //          bedrooms: 3,
+ //          image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg'
+ //        }
+ //      }]
+ //    };
+ //  });
+
+  this.get('/rentals');
+  this.get('/users');
+  this.get('/posts');
+
+  // this.get('/users', function() {
+  //   return {
+  //     data: [{
+  //       type: 'users',
+  //       id: '1',
+  //       attributes: {
+  //         firstName: 'Paresh',
+  //         lastName: 'Gupta',
+  //         email: 'paresh@vinsol.com',
+  //         isAdmin: true
+  //       }
+  //     }, {
+  //       type: 'users',
+  //       id: '2',
+  //       attributes: {
+  //         firstName: 'Parry',
+  //         lastName: 'Gupta',
+  //         email: 'parry@vinsol.com',
+  //         isAdmin: false
+  //       }
+  //     }, {
+  //       type: 'users',
+  //       id: '3',
+  //       attributes: {
+  //         firstName: 'Brook',
+  //         lastName: 'Daniel',
+  //         email: 'brook@vinsol.com',
+  //         isAdmin: false
+  //       }
+  //     }]
+  //   }
+  // })
 }
